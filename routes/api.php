@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\OrganizerController;
 use App\Http\Controllers\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -28,5 +29,7 @@ Route::group(['prefix' => 'v1'], function () {
         Route::put('/users/{id}', [UserController::class, 'update']);
         Route::put('/users/{id}/password', [UserController::class, 'changePassword']);
         Route::delete('/users/{id}', [UserController::class, 'destroy']);
+
+        Route::resource('organizers', OrganizerController::class);
     });
 });
