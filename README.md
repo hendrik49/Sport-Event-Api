@@ -21,4 +21,4 @@ php artisan passport:install
 
 php artisan serve
 
-open postman collection
+open postman collection Sport Event.postman_collection.json
