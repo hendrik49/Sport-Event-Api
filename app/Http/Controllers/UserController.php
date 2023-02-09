@@ -148,7 +148,7 @@ class UserController extends Controller
 
         $user->delete();
 
-        return response(['message' => 'User deleted']);
+        return response(['message' => 'User was deleted']);
     }
 
     public function changePassword(Request $request, $id)

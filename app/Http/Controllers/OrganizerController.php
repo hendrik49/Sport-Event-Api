@@ -119,6 +119,6 @@ class OrganizerController extends Controller
 
         $organizer->delete();
 
-        return response(['message' => 'Organizer deleted']);
+        return response(['message' => 'Organizer was deleted']);
     }
 }

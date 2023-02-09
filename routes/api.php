@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\OrganizerController;
+use App\Http\Controllers\SporteventController;
 use App\Http\Controllers\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -31,5 +32,7 @@ Route::group(['prefix' => 'v1'], function () {
         Route::delete('/users/{id}', [UserController::class, 'destroy']);
 
         Route::resource('organizers', OrganizerController::class);
+        Route::resource('sport-events', SporteventController::class);
+
     });
 });
