@@ -1,0 +1,722 @@
+{
+	"info": {
+		"_postman_id": "8cfabb34-14c0-47ce-8423-a4e1aa2b7b9a",
+		"name": "Sport Event",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "localhost:8000/api/v1/users",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer wlwlkwlwl",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"firstName\": \"string\",\n  \"lastName\": \"string\",\n  \"email\": \"drikdoan12k@gmail.com\",\n  \"password\": \"@String12342\",\n  \"repeatPassword\": \"@String12342\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/users",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/api/v1/users/login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"drikdoank\",\n  \"password\": \"@String123425\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/users/login",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/api/v1/users/3",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNjEyOWU0ZWUyZWY3YzkxMmY0ZDZlNjU5ODQzZmRkMTY3N2IyNDYwM2UxYWQ4OWQwMWU3ZTUwZmIyZDBlNWViZjFiN2ExNGMwN2M0ZTU0MmMiLCJpYXQiOjE2NzU5MzM5MzAuNjYzMzg4LCJuYmYiOjE2NzU5MzM5MzAuNjYzMzkzLCJleHAiOjE3MDc0Njk5MzAuNjUwNzA3LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.VfGAjCFnAixP5VdmQNHQzBX_x6hq_FtNTi1HKJM9nSLlLI0Kfeuc6diY5QXOIQIkv0-PCDHj472igkMRpPah2ImuoxhvPdiqySWAOKNepr2MrLZWtsonWVOLUWMkX0ISh4CjWdPfH3t1XUGbGDfZP5Ka00gEsk24vSs5Z7lROV_IycIJDhULsdGSkvyOoh15pHP_8bFLnryQ7FBIdU324J5dAzrK8aj7sACtlgvmDeET-xSvMSTleiJu5dJrB5kgsIXdkcHZ2N7MWa-PvR7DzFPu3I3HwgN9Bvb6R-X8af8y6gndFQom3d-61mnIviNJG2n70F6tlDVcmXKIZrwyVim3gqJ2wS-didig4QSTw4-gNz4NK-dsEdqVYkaoAwDFzfPdUDumkemAhb--0Ozy4LE6GDQIQQoiN91a7KapkkPBfxq0FybwgNftFyrMsEcnQgCUJeJQl7CidadViiVh5I5I8GuE5ivOXmgfQvJx5ZbxA6WMRScdqA3qZE2jEzugTOxCF7nQEG1dZgMQXE8nOU3VTOZHAq2CUn1GhgQ2ouj83JHliiRDPrAXfUxi1UYB7XK_J3jdOk5ov1hoJ3TFY5cCLdT9eFrmFFuCe-lSkwWEqYN9YooJxrpNqFRUut6OWWak_uM2HcN_X4Pi9ss4lndI1IhUl4wv0gssGQTrL3w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/v1/users/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/api/v1/users/3",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNjEyOWU0ZWUyZWY3YzkxMmY0ZDZlNjU5ODQzZmRkMTY3N2IyNDYwM2UxYWQ4OWQwMWU3ZTUwZmIyZDBlNWViZjFiN2ExNGMwN2M0ZTU0MmMiLCJpYXQiOjE2NzU5MzM5MzAuNjYzMzg4LCJuYmYiOjE2NzU5MzM5MzAuNjYzMzkzLCJleHAiOjE3MDc0Njk5MzAuNjUwNzA3LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.VfGAjCFnAixP5VdmQNHQzBX_x6hq_FtNTi1HKJM9nSLlLI0Kfeuc6diY5QXOIQIkv0-PCDHj472igkMRpPah2ImuoxhvPdiqySWAOKNepr2MrLZWtsonWVOLUWMkX0ISh4CjWdPfH3t1XUGbGDfZP5Ka00gEsk24vSs5Z7lROV_IycIJDhULsdGSkvyOoh15pHP_8bFLnryQ7FBIdU324J5dAzrK8aj7sACtlgvmDeET-xSvMSTleiJu5dJrB5kgsIXdkcHZ2N7MWa-PvR7DzFPu3I3HwgN9Bvb6R-X8af8y6gndFQom3d-61mnIviNJG2n70F6tlDVcmXKIZrwyVim3gqJ2wS-didig4QSTw4-gNz4NK-dsEdqVYkaoAwDFzfPdUDumkemAhb--0Ozy4LE6GDQIQQoiN91a7KapkkPBfxq0FybwgNftFyrMsEcnQgCUJeJQl7CidadViiVh5I5I8GuE5ivOXmgfQvJx5ZbxA6WMRScdqA3qZE2jEzugTOxCF7nQEG1dZgMQXE8nOU3VTOZHAq2CUn1GhgQ2ouj83JHliiRDPrAXfUxi1UYB7XK_J3jdOk5ov1hoJ3TFY5cCLdT9eFrmFFuCe-lSkwWEqYN9YooJxrpNqFRUut6OWWak_uM2HcN_X4Pi9ss4lndI1IhUl4wv0gssGQTrL3w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\": \"string2\",\n    \"lastName\": \"string66\",\n    \"email\": \"drikdoan12k@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/users/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/api/v1/users/3/password",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGQ0OWViYTJkMjA1N2YyOTIyNDRlZDgxNjlhYjU5YzI4N2I0MjQyN2IwNzJlNDhmNDZiMGJlZTRjMDgzZWIyYmUyMmE2YmQ1MzEyMjViNWIiLCJpYXQiOjE2NzU5MzU0ODIuMTU3Mjc0LCJuYmYiOjE2NzU5MzU0ODIuMTU3MjgsImV4cCI6MTcwNzQ3MTQ4Mi4xNTMwMTgsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.aDhwzkIJidifdXhI8XiZsFzSIoFMHYKrO7P0XN_QZR7s98a8sl7E79AO8yUUBxMZQBBJWEX6Q8EgIDdPcaftZdllThM8oxSzGpoMie6ijwbpV3zIgqgb7IUXzBDTRK2JlGKqPLoItaWEOXgoIUOiBNtkWpVt5Cvxnq0DmgQUU1AbV_NrtZqGgT3xtb5hHbX1SU4aTBxB7hV_E-BdwJTJ3PhXoYHVpjWeat8waZTV32HOsl2_OjZLy13js2c7I5bJ_FjcEI4c5nFGoqCop9nFBqQyoabLB2DTfLA7iob16N8FmBPYD5ccvFdL86Xmiv78U9Zc6I6gZ6tI_ubdHNL4KtR3d56Mz5NCzDRbWmdh0sw-9iHSZlQf199pPdinVIeirOjG1zAO6Mpg7AGa8lCV04HzvYfRAI-wf2XbGZwKxVEvX0nJey-m_M91BrqcV70iCeiAS_JRXSiUNhP1OxRaabUCwmmoePUUe_gP4ylO45MbtrbqQQNb3c7dvoGJF6E8kUIgZVEtctV-iPIAuNXBwKRtpBGL9pJY9TMHQ9kI4cWOT0RDW3-cU4wxjNraMUlk4_xDp_nf_oVkB2FPwy0dt8ouWzcFVYLl9mHvRrs9eEzWIwSM4RI9klI2zyrxAlxjjF7Xkc1-dRxhW5YbgwWz4ettrofWn391fzU0vntXxjg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"oldPassword\": \"@String123425\",\n    \"newPassword\": \"@String123425\",\n    \"repeatPassword\": \"@String123425\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/users/2/password",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"2",
+								"password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/api/v1/users/3",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNjEyOWU0ZWUyZWY3YzkxMmY0ZDZlNjU5ODQzZmRkMTY3N2IyNDYwM2UxYWQ4OWQwMWU3ZTUwZmIyZDBlNWViZjFiN2ExNGMwN2M0ZTU0MmMiLCJpYXQiOjE2NzU5MzM5MzAuNjYzMzg4LCJuYmYiOjE2NzU5MzM5MzAuNjYzMzkzLCJleHAiOjE3MDc0Njk5MzAuNjUwNzA3LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.VfGAjCFnAixP5VdmQNHQzBX_x6hq_FtNTi1HKJM9nSLlLI0Kfeuc6diY5QXOIQIkv0-PCDHj472igkMRpPah2ImuoxhvPdiqySWAOKNepr2MrLZWtsonWVOLUWMkX0ISh4CjWdPfH3t1XUGbGDfZP5Ka00gEsk24vSs5Z7lROV_IycIJDhULsdGSkvyOoh15pHP_8bFLnryQ7FBIdU324J5dAzrK8aj7sACtlgvmDeET-xSvMSTleiJu5dJrB5kgsIXdkcHZ2N7MWa-PvR7DzFPu3I3HwgN9Bvb6R-X8af8y6gndFQom3d-61mnIviNJG2n70F6tlDVcmXKIZrwyVim3gqJ2wS-didig4QSTw4-gNz4NK-dsEdqVYkaoAwDFzfPdUDumkemAhb--0Ozy4LE6GDQIQQoiN91a7KapkkPBfxq0FybwgNftFyrMsEcnQgCUJeJQl7CidadViiVh5I5I8GuE5ivOXmgfQvJx5ZbxA6WMRScdqA3qZE2jEzugTOxCF7nQEG1dZgMQXE8nOU3VTOZHAq2CUn1GhgQ2ouj83JHliiRDPrAXfUxi1UYB7XK_J3jdOk5ov1hoJ3TFY5cCLdT9eFrmFFuCe-lSkwWEqYN9YooJxrpNqFRUut6OWWak_uM2HcN_X4Pi9ss4lndI1IhUl4wv0gssGQTrL3w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/v1/users/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Organizers",
+			"item": [
+				{
+					"name": "localhost:8000/api/v1/organizers",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer wlwlkwlwl",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"organizerName\": \"string\",\n    \"imageLocation\": \"http://images/1.jpg\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/organizers",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"organizers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/api/v1/organizers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMjk1ZjY5NjhlYWRmMmJhMDYyMjFmYzkyMTM4MmYzODc2YWU5MDRhNDcyZDUxNTBhOGZlMGY4Nzk5MjhmNzBiZDllZTk5ZmM4YjQ5ZDYxMDUiLCJpYXQiOjE2NzU5NTA3ODguOTQ4NTA3LCJuYmYiOjE2NzU5NTA3ODguOTQ4NTE2LCJleHAiOjE3MDc0ODY3ODguOTM1NTAxLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.rgY-2hN9kft25Ms8K8XetcoN1VHEmdmM4D6XeG4-wwesBpv06Az7pb1etMuoFcNEPF0_SdewCPoTllaiUfHLz0_Wy6jINLSdExG6abNtELneXkGqrIgO0WWMlvGIimd4GXGganZDPDaVrj2xsEM7u71PqCq96Su4zgx2Z7EdmZlE8otoauBu6pEXWj3waQO7WmfaKuRt0IfyCrifj1yOQR7aZza58TcoHZAGlXPSiCP5wiGCxJDG9XL1Ko53rvyFBk7wQsfFdtYhUwmCYN9b38ajpDSz7amB2Iw247rzxfpqzQMTJnU8Xg9jqZpu00hZTSSgYixsFppxMuVR9SMXhMus6gKt_l0PKWRfDkbkpe0QlEtyd3ZB2Wq8-TBavw6OqOx6gElCbaJn6DAUHo92ZXIrYYsqWZguMQhBdVbTuctO_ILWNQGRRrpJDuG4cA6bz2qDfDCq3kj1dj6pbQblQI8GMfM6-E3vKfnOKTRx3GwsJkw2Vs4VW_tEPsSLLb1JJkiuzZ86n76bv3QZ4oRdW_Dr7uUpckfU6QpoMrroAVvzyQe8Y60gzC2GQeGefgr6TP48ynr0T8lPfpmj_ZkOTaJO34vyZ69n8g-M0i3agy0VE3QEZQYfc7HB7fadzoh8ZaSmJf00d9rjnz4w9o-xUM0S1uIAEOTd7zs9gFvS00A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer wlwlkwlwl",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"organizerName\": \"string\",\n    \"imageLocation\": \"http://images/1.jpg\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/organizers?page=1&perPage=3",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"organizers"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "perPage",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/api/v1/organizers/3",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNjEyOWU0ZWUyZWY3YzkxMmY0ZDZlNjU5ODQzZmRkMTY3N2IyNDYwM2UxYWQ4OWQwMWU3ZTUwZmIyZDBlNWViZjFiN2ExNGMwN2M0ZTU0MmMiLCJpYXQiOjE2NzU5MzM5MzAuNjYzMzg4LCJuYmYiOjE2NzU5MzM5MzAuNjYzMzkzLCJleHAiOjE3MDc0Njk5MzAuNjUwNzA3LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.VfGAjCFnAixP5VdmQNHQzBX_x6hq_FtNTi1HKJM9nSLlLI0Kfeuc6diY5QXOIQIkv0-PCDHj472igkMRpPah2ImuoxhvPdiqySWAOKNepr2MrLZWtsonWVOLUWMkX0ISh4CjWdPfH3t1XUGbGDfZP5Ka00gEsk24vSs5Z7lROV_IycIJDhULsdGSkvyOoh15pHP_8bFLnryQ7FBIdU324J5dAzrK8aj7sACtlgvmDeET-xSvMSTleiJu5dJrB5kgsIXdkcHZ2N7MWa-PvR7DzFPu3I3HwgN9Bvb6R-X8af8y6gndFQom3d-61mnIviNJG2n70F6tlDVcmXKIZrwyVim3gqJ2wS-didig4QSTw4-gNz4NK-dsEdqVYkaoAwDFzfPdUDumkemAhb--0Ozy4LE6GDQIQQoiN91a7KapkkPBfxq0FybwgNftFyrMsEcnQgCUJeJQl7CidadViiVh5I5I8GuE5ivOXmgfQvJx5ZbxA6WMRScdqA3qZE2jEzugTOxCF7nQEG1dZgMQXE8nOU3VTOZHAq2CUn1GhgQ2ouj83JHliiRDPrAXfUxi1UYB7XK_J3jdOk5ov1hoJ3TFY5cCLdT9eFrmFFuCe-lSkwWEqYN9YooJxrpNqFRUut6OWWak_uM2HcN_X4Pi9ss4lndI1IhUl4wv0gssGQTrL3w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/v1/organizers/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"organizers",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/api/v1/organizers/3",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNjEyOWU0ZWUyZWY3YzkxMmY0ZDZlNjU5ODQzZmRkMTY3N2IyNDYwM2UxYWQ4OWQwMWU3ZTUwZmIyZDBlNWViZjFiN2ExNGMwN2M0ZTU0MmMiLCJpYXQiOjE2NzU5MzM5MzAuNjYzMzg4LCJuYmYiOjE2NzU5MzM5MzAuNjYzMzkzLCJleHAiOjE3MDc0Njk5MzAuNjUwNzA3LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.VfGAjCFnAixP5VdmQNHQzBX_x6hq_FtNTi1HKJM9nSLlLI0Kfeuc6diY5QXOIQIkv0-PCDHj472igkMRpPah2ImuoxhvPdiqySWAOKNepr2MrLZWtsonWVOLUWMkX0ISh4CjWdPfH3t1XUGbGDfZP5Ka00gEsk24vSs5Z7lROV_IycIJDhULsdGSkvyOoh15pHP_8bFLnryQ7FBIdU324J5dAzrK8aj7sACtlgvmDeET-xSvMSTleiJu5dJrB5kgsIXdkcHZ2N7MWa-PvR7DzFPu3I3HwgN9Bvb6R-X8af8y6gndFQom3d-61mnIviNJG2n70F6tlDVcmXKIZrwyVim3gqJ2wS-didig4QSTw4-gNz4NK-dsEdqVYkaoAwDFzfPdUDumkemAhb--0Ozy4LE6GDQIQQoiN91a7KapkkPBfxq0FybwgNftFyrMsEcnQgCUJeJQl7CidadViiVh5I5I8GuE5ivOXmgfQvJx5ZbxA6WMRScdqA3qZE2jEzugTOxCF7nQEG1dZgMQXE8nOU3VTOZHAq2CUn1GhgQ2ouj83JHliiRDPrAXfUxi1UYB7XK_J3jdOk5ov1hoJ3TFY5cCLdT9eFrmFFuCe-lSkwWEqYN9YooJxrpNqFRUut6OWWak_uM2HcN_X4Pi9ss4lndI1IhUl4wv0gssGQTrL3w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\": \"string2\",\n    \"lastName\": \"string66\",\n    \"email\": \"drikdoan12k@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/organizers/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"organizers",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/api/v1/organizers/3",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMjk1ZjY5NjhlYWRmMmJhMDYyMjFmYzkyMTM4MmYzODc2YWU5MDRhNDcyZDUxNTBhOGZlMGY4Nzk5MjhmNzBiZDllZTk5ZmM4YjQ5ZDYxMDUiLCJpYXQiOjE2NzU5NTA3ODguOTQ4NTA3LCJuYmYiOjE2NzU5NTA3ODguOTQ4NTE2LCJleHAiOjE3MDc0ODY3ODguOTM1NTAxLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.rgY-2hN9kft25Ms8K8XetcoN1VHEmdmM4D6XeG4-wwesBpv06Az7pb1etMuoFcNEPF0_SdewCPoTllaiUfHLz0_Wy6jINLSdExG6abNtELneXkGqrIgO0WWMlvGIimd4GXGganZDPDaVrj2xsEM7u71PqCq96Su4zgx2Z7EdmZlE8otoauBu6pEXWj3waQO7WmfaKuRt0IfyCrifj1yOQR7aZza58TcoHZAGlXPSiCP5wiGCxJDG9XL1Ko53rvyFBk7wQsfFdtYhUwmCYN9b38ajpDSz7amB2Iw247rzxfpqzQMTJnU8Xg9jqZpu00hZTSSgYixsFppxMuVR9SMXhMus6gKt_l0PKWRfDkbkpe0QlEtyd3ZB2Wq8-TBavw6OqOx6gElCbaJn6DAUHo92ZXIrYYsqWZguMQhBdVbTuctO_ILWNQGRRrpJDuG4cA6bz2qDfDCq3kj1dj6pbQblQI8GMfM6-E3vKfnOKTRx3GwsJkw2Vs4VW_tEPsSLLb1JJkiuzZ86n76bv3QZ4oRdW_Dr7uUpckfU6QpoMrroAVvzyQe8Y60gzC2GQeGefgr6TP48ynr0T8lPfpmj_ZkOTaJO34vyZ69n8g-M0i3agy0VE3QEZQYfc7HB7fadzoh8ZaSmJf00d9rjnz4w9o-xUM0S1uIAEOTd7zs9gFvS00A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/v1/organizers/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"organizers",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sport Event",
+			"item": [
+				{
+					"name": "localhost:8000/api/v1/sport-events",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMjk1ZjY5NjhlYWRmMmJhMDYyMjFmYzkyMTM4MmYzODc2YWU5MDRhNDcyZDUxNTBhOGZlMGY4Nzk5MjhmNzBiZDllZTk5ZmM4YjQ5ZDYxMDUiLCJpYXQiOjE2NzU5NTA3ODguOTQ4NTA3LCJuYmYiOjE2NzU5NTA3ODguOTQ4NTE2LCJleHAiOjE3MDc0ODY3ODguOTM1NTAxLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.rgY-2hN9kft25Ms8K8XetcoN1VHEmdmM4D6XeG4-wwesBpv06Az7pb1etMuoFcNEPF0_SdewCPoTllaiUfHLz0_Wy6jINLSdExG6abNtELneXkGqrIgO0WWMlvGIimd4GXGganZDPDaVrj2xsEM7u71PqCq96Su4zgx2Z7EdmZlE8otoauBu6pEXWj3waQO7WmfaKuRt0IfyCrifj1yOQR7aZza58TcoHZAGlXPSiCP5wiGCxJDG9XL1Ko53rvyFBk7wQsfFdtYhUwmCYN9b38ajpDSz7amB2Iw247rzxfpqzQMTJnU8Xg9jqZpu00hZTSSgYixsFppxMuVR9SMXhMus6gKt_l0PKWRfDkbkpe0QlEtyd3ZB2Wq8-TBavw6OqOx6gElCbaJn6DAUHo92ZXIrYYsqWZguMQhBdVbTuctO_ILWNQGRRrpJDuG4cA6bz2qDfDCq3kj1dj6pbQblQI8GMfM6-E3vKfnOKTRx3GwsJkw2Vs4VW_tEPsSLLb1JJkiuzZ86n76bv3QZ4oRdW_Dr7uUpckfU6QpoMrroAVvzyQe8Y60gzC2GQeGefgr6TP48ynr0T8lPfpmj_ZkOTaJO34vyZ69n8g-M0i3agy0VE3QEZQYfc7HB7fadzoh8ZaSmJf00d9rjnz4w9o-xUM0S1uIAEOTd7zs9gFvS00A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer wlwlkwlwl",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"eventDate\": \"2023-02-09\",\n  \"eventType\": \"string1\",\n  \"eventName\": \"string2\",\n  \"organizerId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/sport-events",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"sport-events"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/api/v1/sport-events",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMjk1ZjY5NjhlYWRmMmJhMDYyMjFmYzkyMTM4MmYzODc2YWU5MDRhNDcyZDUxNTBhOGZlMGY4Nzk5MjhmNzBiZDllZTk5ZmM4YjQ5ZDYxMDUiLCJpYXQiOjE2NzU5NTA3ODguOTQ4NTA3LCJuYmYiOjE2NzU5NTA3ODguOTQ4NTE2LCJleHAiOjE3MDc0ODY3ODguOTM1NTAxLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.rgY-2hN9kft25Ms8K8XetcoN1VHEmdmM4D6XeG4-wwesBpv06Az7pb1etMuoFcNEPF0_SdewCPoTllaiUfHLz0_Wy6jINLSdExG6abNtELneXkGqrIgO0WWMlvGIimd4GXGganZDPDaVrj2xsEM7u71PqCq96Su4zgx2Z7EdmZlE8otoauBu6pEXWj3waQO7WmfaKuRt0IfyCrifj1yOQR7aZza58TcoHZAGlXPSiCP5wiGCxJDG9XL1Ko53rvyFBk7wQsfFdtYhUwmCYN9b38ajpDSz7amB2Iw247rzxfpqzQMTJnU8Xg9jqZpu00hZTSSgYixsFppxMuVR9SMXhMus6gKt_l0PKWRfDkbkpe0QlEtyd3ZB2Wq8-TBavw6OqOx6gElCbaJn6DAUHo92ZXIrYYsqWZguMQhBdVbTuctO_ILWNQGRRrpJDuG4cA6bz2qDfDCq3kj1dj6pbQblQI8GMfM6-E3vKfnOKTRx3GwsJkw2Vs4VW_tEPsSLLb1JJkiuzZ86n76bv3QZ4oRdW_Dr7uUpckfU6QpoMrroAVvzyQe8Y60gzC2GQeGefgr6TP48ynr0T8lPfpmj_ZkOTaJO34vyZ69n8g-M0i3agy0VE3QEZQYfc7HB7fadzoh8ZaSmJf00d9rjnz4w9o-xUM0S1uIAEOTd7zs9gFvS00A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "bearer wlwlkwlwl",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/v1/sport-events?page=1&perPage=2",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"sport-events"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "perPage",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/api/v1/sport-events/3",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMjk1ZjY5NjhlYWRmMmJhMDYyMjFmYzkyMTM4MmYzODc2YWU5MDRhNDcyZDUxNTBhOGZlMGY4Nzk5MjhmNzBiZDllZTk5ZmM4YjQ5ZDYxMDUiLCJpYXQiOjE2NzU5NTA3ODguOTQ4NTA3LCJuYmYiOjE2NzU5NTA3ODguOTQ4NTE2LCJleHAiOjE3MDc0ODY3ODguOTM1NTAxLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.rgY-2hN9kft25Ms8K8XetcoN1VHEmdmM4D6XeG4-wwesBpv06Az7pb1etMuoFcNEPF0_SdewCPoTllaiUfHLz0_Wy6jINLSdExG6abNtELneXkGqrIgO0WWMlvGIimd4GXGganZDPDaVrj2xsEM7u71PqCq96Su4zgx2Z7EdmZlE8otoauBu6pEXWj3waQO7WmfaKuRt0IfyCrifj1yOQR7aZza58TcoHZAGlXPSiCP5wiGCxJDG9XL1Ko53rvyFBk7wQsfFdtYhUwmCYN9b38ajpDSz7amB2Iw247rzxfpqzQMTJnU8Xg9jqZpu00hZTSSgYixsFppxMuVR9SMXhMus6gKt_l0PKWRfDkbkpe0QlEtyd3ZB2Wq8-TBavw6OqOx6gElCbaJn6DAUHo92ZXIrYYsqWZguMQhBdVbTuctO_ILWNQGRRrpJDuG4cA6bz2qDfDCq3kj1dj6pbQblQI8GMfM6-E3vKfnOKTRx3GwsJkw2Vs4VW_tEPsSLLb1JJkiuzZ86n76bv3QZ4oRdW_Dr7uUpckfU6QpoMrroAVvzyQe8Y60gzC2GQeGefgr6TP48ynr0T8lPfpmj_ZkOTaJO34vyZ69n8g-M0i3agy0VE3QEZQYfc7HB7fadzoh8ZaSmJf00d9rjnz4w9o-xUM0S1uIAEOTd7zs9gFvS00A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/v1/sport-events/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"sport-events",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/api/v1/sport-events/3",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMjk1ZjY5NjhlYWRmMmJhMDYyMjFmYzkyMTM4MmYzODc2YWU5MDRhNDcyZDUxNTBhOGZlMGY4Nzk5MjhmNzBiZDllZTk5ZmM4YjQ5ZDYxMDUiLCJpYXQiOjE2NzU5NTA3ODguOTQ4NTA3LCJuYmYiOjE2NzU5NTA3ODguOTQ4NTE2LCJleHAiOjE3MDc0ODY3ODguOTM1NTAxLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.rgY-2hN9kft25Ms8K8XetcoN1VHEmdmM4D6XeG4-wwesBpv06Az7pb1etMuoFcNEPF0_SdewCPoTllaiUfHLz0_Wy6jINLSdExG6abNtELneXkGqrIgO0WWMlvGIimd4GXGganZDPDaVrj2xsEM7u71PqCq96Su4zgx2Z7EdmZlE8otoauBu6pEXWj3waQO7WmfaKuRt0IfyCrifj1yOQR7aZza58TcoHZAGlXPSiCP5wiGCxJDG9XL1Ko53rvyFBk7wQsfFdtYhUwmCYN9b38ajpDSz7amB2Iw247rzxfpqzQMTJnU8Xg9jqZpu00hZTSSgYixsFppxMuVR9SMXhMus6gKt_l0PKWRfDkbkpe0QlEtyd3ZB2Wq8-TBavw6OqOx6gElCbaJn6DAUHo92ZXIrYYsqWZguMQhBdVbTuctO_ILWNQGRRrpJDuG4cA6bz2qDfDCq3kj1dj6pbQblQI8GMfM6-E3vKfnOKTRx3GwsJkw2Vs4VW_tEPsSLLb1JJkiuzZ86n76bv3QZ4oRdW_Dr7uUpckfU6QpoMrroAVvzyQe8Y60gzC2GQeGefgr6TP48ynr0T8lPfpmj_ZkOTaJO34vyZ69n8g-M0i3agy0VE3QEZQYfc7HB7fadzoh8ZaSmJf00d9rjnz4w9o-xUM0S1uIAEOTd7zs9gFvS00A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"eventDate\": \"2023-02-09\",\n    \"eventType\": \"string1\",\n    \"eventName\": \"string24\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/sport-events/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"sport-events",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/api/v1/sport-events/3",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMjk1ZjY5NjhlYWRmMmJhMDYyMjFmYzkyMTM4MmYzODc2YWU5MDRhNDcyZDUxNTBhOGZlMGY4Nzk5MjhmNzBiZDllZTk5ZmM4YjQ5ZDYxMDUiLCJpYXQiOjE2NzU5NTA3ODguOTQ4NTA3LCJuYmYiOjE2NzU5NTA3ODguOTQ4NTE2LCJleHAiOjE3MDc0ODY3ODguOTM1NTAxLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.rgY-2hN9kft25Ms8K8XetcoN1VHEmdmM4D6XeG4-wwesBpv06Az7pb1etMuoFcNEPF0_SdewCPoTllaiUfHLz0_Wy6jINLSdExG6abNtELneXkGqrIgO0WWMlvGIimd4GXGganZDPDaVrj2xsEM7u71PqCq96Su4zgx2Z7EdmZlE8otoauBu6pEXWj3waQO7WmfaKuRt0IfyCrifj1yOQR7aZza58TcoHZAGlXPSiCP5wiGCxJDG9XL1Ko53rvyFBk7wQsfFdtYhUwmCYN9b38ajpDSz7amB2Iw247rzxfpqzQMTJnU8Xg9jqZpu00hZTSSgYixsFppxMuVR9SMXhMus6gKt_l0PKWRfDkbkpe0QlEtyd3ZB2Wq8-TBavw6OqOx6gElCbaJn6DAUHo92ZXIrYYsqWZguMQhBdVbTuctO_ILWNQGRRrpJDuG4cA6bz2qDfDCq3kj1dj6pbQblQI8GMfM6-E3vKfnOKTRx3GwsJkw2Vs4VW_tEPsSLLb1JJkiuzZ86n76bv3QZ4oRdW_Dr7uUpckfU6QpoMrroAVvzyQe8Y60gzC2GQeGefgr6TP48ynr0T8lPfpmj_ZkOTaJO34vyZ69n8g-M0i3agy0VE3QEZQYfc7HB7fadzoh8ZaSmJf00d9rjnz4w9o-xUM0S1uIAEOTd7zs9gFvS00A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/v1/sport-events/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"sport-events",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

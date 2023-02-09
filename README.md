@@ -7,9 +7,18 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+## Steps to run this APIs
 
+config the db on .env file
+
+composer install
+
+php artisan key:generate
 
 php artisan migrate
 
 php artisan passport:install
+
+php artisan serve
+
+open postman collection
